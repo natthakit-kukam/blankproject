@@ -1,4 +1,4 @@
-@extends('crm.layout')
+@extends('layouts.crm.layout')
 
 @section('styles')
 @endsection
@@ -82,7 +82,7 @@
                 <div class="card-body pt-2">
                   <div class="row g-0 h-100 align-items-center">
                     <div class="col">
-                      <div class="d-flex align-items-center"><img class="me-3" src="/layout/backend/assets/img/icons/weather-icon.png" alt="" height="60" />
+                      <div class="d-flex align-items-center"><img class="me-3" src="/layout/crm/assets/img/icons/weather-icon.png" alt="" height="60" />
                         <div>
                           <h6 class="mb-2">New York City</h6>
                           <div class="fs--2 fw-semi-bold">
@@ -305,7 +305,7 @@
             </div>
             <div class="col-lg-6 col-xl-5 col-xxl-4 mb-3 ps-lg-2">
               <div class="card h-lg-100">
-                <div class="bg-holder bg-card" style="background-image:url(/layout/backend/assets/img/icons/spot-illustrations/corner-1.png);">
+                <div class="bg-holder bg-card" style="background-image:url(/layout/crm/assets/img/icons/spot-illustrations/corner-1.png);">
                 </div>
                 <!--/.bg-holder-->
 
@@ -332,7 +332,7 @@
                       <tbody>
                         <tr class="border-bottom border-200">
                           <td>
-                            <div class="d-flex align-items-center position-relative"><img class="rounded-1 border border-200" src="/layout/backend/assets/img/products/12.png" width="60" alt="" />
+                            <div class="d-flex align-items-center position-relative"><img class="rounded-1 border border-200" src="/layout/crm/assets/img/products/12.png" width="60" alt="" />
                               <div class="flex-1 ms-3">
                                 <h6 class="mb-1 fw-semi-bold"><a class="text-dark stretched-link" href="#!">Raven Pro</a></h6>
                                 <p class="fw-semi-bold mb-0 text-500">Landing</p>
@@ -351,7 +351,7 @@
                         </tr>
                         <tr class="border-bottom border-200">
                           <td>
-                            <div class="d-flex align-items-center position-relative"><img class="rounded-1 border border-200" src="/layout/backend/assets/img/products/10.png" width="60" alt="" />
+                            <div class="d-flex align-items-center position-relative"><img class="rounded-1 border border-200" src="/layout/crm/assets/img/products/10.png" width="60" alt="" />
                               <div class="flex-1 ms-3">
                                 <h6 class="mb-1 fw-semi-bold"><a class="text-dark stretched-link" href="#!">Boots4</a></h6>
                                 <p class="fw-semi-bold mb-0 text-500">Portfolio</p>
@@ -370,7 +370,7 @@
                         </tr>
                         <tr class="border-bottom border-200">
                           <td>
-                            <div class="d-flex align-items-center position-relative"><img class="rounded-1 border border-200" src="/layout/backend/assets/img/products/11.png" width="60" alt="" />
+                            <div class="d-flex align-items-center position-relative"><img class="rounded-1 border border-200" src="/layout/crm/assets/img/products/11.png" width="60" alt="" />
                               <div class="flex-1 ms-3">
                                 <h6 class="mb-1 fw-semi-bold"><a class="text-dark stretched-link" href="#!">Falcon</a></h6>
                                 <p class="fw-semi-bold mb-0 text-500">Admin</p>
@@ -389,7 +389,7 @@
                         </tr>
                         <tr class="border-bottom border-200">
                           <td>
-                            <div class="d-flex align-items-center position-relative"><img class="rounded-1 border border-200" src="/layout/backend/assets/img/products/14.png" width="60" alt="" />
+                            <div class="d-flex align-items-center position-relative"><img class="rounded-1 border border-200" src="/layout/crm/assets/img/products/14.png" width="60" alt="" />
                               <div class="flex-1 ms-3">
                                 <h6 class="mb-1 fw-semi-bold"><a class="text-dark stretched-link" href="#!">Slick</a></h6>
                                 <p class="fw-semi-bold mb-0 text-500">Builder</p>
@@ -408,7 +408,7 @@
                         </tr>
                         <tr>
                           <td>
-                            <div class="d-flex align-items-center position-relative"><img class="rounded-1 border border-200" src="/layout/backend/assets/img/products/13.png" width="60" alt="" />
+                            <div class="d-flex align-items-center position-relative"><img class="rounded-1 border border-200" src="/layout/crm/assets/img/products/13.png" width="60" alt="" />
                               <div class="flex-1 ms-3">
                                 <h6 class="mb-1 fw-semi-bold"><a class="text-dark stretched-link" href="#!">Reign Pro</a></h6>
                                 <p class="fw-semi-bold mb-0 text-500">Agency</p>
@@ -450,61 +450,61 @@
                 </div>
                 <div class="card-body pb-0">
                   <div class="d-flex mb-3 hover-actions-trigger align-items-center">
-                    <div class="file-thumbnail"><img class="border h-100 w-100 fit-cover rounded-2" src="/layout/backend/assets/img/products/5-thumb.png" alt="" />
+                    <div class="file-thumbnail"><img class="border h-100 w-100 fit-cover rounded-2" src="/layout/crm/assets/img/products/5-thumb.png" alt="" />
                     </div>
                     <div class="ms-3 flex-shrink-1 flex-grow-1">
                       <h6 class="mb-1"><a class="stretched-link text-900 fw-semi-bold" href="#!">apple-smart-watch.png</a></h6>
                       <div class="fs--1"><span class="fw-semi-bold">Antony</span><span class="fw-medium text-600 ms-2">Just Now</span></div>
-                      <div class="hover-actions end-0 top-50 translate-middle-y"><a class="btn btn-light border-300 btn-sm me-1 text-600" data-bs-toggle="tooltip" data-bs-placement="top" title="Download" href="/layout/backend/assets/img/icons/cloud-download.svg" download="download"><img src="/layout/backend/assets/img/icons/cloud-download.svg" alt="" width="15" /></a>
-                        <button class="btn btn-light border-300 btn-sm me-1 text-600 shadow-none" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><img src="/layout/backend/assets/img/icons/edit-alt.svg" alt="" width="15" /></button>
+                      <div class="hover-actions end-0 top-50 translate-middle-y"><a class="btn btn-light border-300 btn-sm me-1 text-600" data-bs-toggle="tooltip" data-bs-placement="top" title="Download" href="/layout/crm/assets/img/icons/cloud-download.svg" download="download"><img src="/layout/crm/assets/img/icons/cloud-download.svg" alt="" width="15" /></a>
+                        <button class="btn btn-light border-300 btn-sm me-1 text-600 shadow-none" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><img src="/layout/crm/assets/img/icons/edit-alt.svg" alt="" width="15" /></button>
                       </div>
                     </div>
                   </div>
                   <hr class="text-200" />
                   <div class="d-flex mb-3 hover-actions-trigger align-items-center">
-                    <div class="file-thumbnail"><img class="border h-100 w-100 fit-cover rounded-2" src="/layout/backend/assets/img/products/3-thumb.png" alt="" />
+                    <div class="file-thumbnail"><img class="border h-100 w-100 fit-cover rounded-2" src="/layout/crm/assets/img/products/3-thumb.png" alt="" />
                     </div>
                     <div class="ms-3 flex-shrink-1 flex-grow-1">
                       <h6 class="mb-1"><a class="stretched-link text-900 fw-semi-bold" href="#!">iphone.jpg</a></h6>
                       <div class="fs--1"><span class="fw-semi-bold">Antony</span><span class="fw-medium text-600 ms-2">Yesterday at 1:30 PM</span></div>
-                      <div class="hover-actions end-0 top-50 translate-middle-y"><a class="btn btn-light border-300 btn-sm me-1 text-600" data-bs-toggle="tooltip" data-bs-placement="top" title="Download" href="/layout/backend/assets/img/icons/cloud-download.svg" download="download"><img src="/layout/backend/assets/img/icons/cloud-download.svg" alt="" width="15" /></a>
-                        <button class="btn btn-light border-300 btn-sm me-1 text-600 shadow-none" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><img src="/layout/backend/assets/img/icons/edit-alt.svg" alt="" width="15" /></button>
+                      <div class="hover-actions end-0 top-50 translate-middle-y"><a class="btn btn-light border-300 btn-sm me-1 text-600" data-bs-toggle="tooltip" data-bs-placement="top" title="Download" href="/layout/crm/assets/img/icons/cloud-download.svg" download="download"><img src="/layout/crm/assets/img/icons/cloud-download.svg" alt="" width="15" /></a>
+                        <button class="btn btn-light border-300 btn-sm me-1 text-600 shadow-none" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><img src="/layout/crm/assets/img/icons/edit-alt.svg" alt="" width="15" /></button>
                       </div>
                     </div>
                   </div>
                   <hr class="text-200" />
                   <div class="d-flex mb-3 hover-actions-trigger align-items-center">
-                    <div class="file-thumbnail"><img class="img-fluid" src="/layout/backend/assets/img/icons/zip.png" alt="" />
+                    <div class="file-thumbnail"><img class="img-fluid" src="/layout/crm/assets/img/icons/zip.png" alt="" />
                     </div>
                     <div class="ms-3 flex-shrink-1 flex-grow-1">
                       <h6 class="mb-1"><a class="stretched-link text-900 fw-semi-bold" href="#!">Falcon v1.8.2</a></h6>
                       <div class="fs--1"><span class="fw-semi-bold">Jane</span><span class="fw-medium text-600 ms-2">27 Sep at 10:30 AM</span></div>
-                      <div class="hover-actions end-0 top-50 translate-middle-y"><a class="btn btn-light border-300 btn-sm me-1 text-600" data-bs-toggle="tooltip" data-bs-placement="top" title="Download" href="/layout/backend/assets/img/icons/cloud-download.svg" download="download"><img src="/layout/backend/assets/img/icons/cloud-download.svg" alt="" width="15" /></a>
-                        <button class="btn btn-light border-300 btn-sm me-1 text-600 shadow-none" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><img src="/layout/backend/assets/img/icons/edit-alt.svg" alt="" width="15" /></button>
+                      <div class="hover-actions end-0 top-50 translate-middle-y"><a class="btn btn-light border-300 btn-sm me-1 text-600" data-bs-toggle="tooltip" data-bs-placement="top" title="Download" href="/layout/crm/assets/img/icons/cloud-download.svg" download="download"><img src="/layout/crm/assets/img/icons/cloud-download.svg" alt="" width="15" /></a>
+                        <button class="btn btn-light border-300 btn-sm me-1 text-600 shadow-none" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><img src="/layout/crm/assets/img/icons/edit-alt.svg" alt="" width="15" /></button>
                       </div>
                     </div>
                   </div>
                   <hr class="text-200" />
                   <div class="d-flex mb-3 hover-actions-trigger align-items-center">
-                    <div class="file-thumbnail"><img class="border h-100 w-100 fit-cover rounded-2" src="/layout/backend/assets/img/products/2-thumb.png" alt="" />
+                    <div class="file-thumbnail"><img class="border h-100 w-100 fit-cover rounded-2" src="/layout/crm/assets/img/products/2-thumb.png" alt="" />
                     </div>
                     <div class="ms-3 flex-shrink-1 flex-grow-1">
                       <h6 class="mb-1"><a class="stretched-link text-900 fw-semi-bold" href="#!">iMac.jpg</a></h6>
                       <div class="fs--1"><span class="fw-semi-bold">Rowen</span><span class="fw-medium text-600 ms-2">23 Sep at 6:10 PM</span></div>
-                      <div class="hover-actions end-0 top-50 translate-middle-y"><a class="btn btn-light border-300 btn-sm me-1 text-600" data-bs-toggle="tooltip" data-bs-placement="top" title="Download" href="/layout/backend/assets/img/icons/cloud-download.svg" download="download"><img src="/layout/backend/assets/img/icons/cloud-download.svg" alt="" width="15" /></a>
-                        <button class="btn btn-light border-300 btn-sm me-1 text-600 shadow-none" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><img src="/layout/backend/assets/img/icons/edit-alt.svg" alt="" width="15" /></button>
+                      <div class="hover-actions end-0 top-50 translate-middle-y"><a class="btn btn-light border-300 btn-sm me-1 text-600" data-bs-toggle="tooltip" data-bs-placement="top" title="Download" href="/layout/crm/assets/img/icons/cloud-download.svg" download="download"><img src="/layout/crm/assets/img/icons/cloud-download.svg" alt="" width="15" /></a>
+                        <button class="btn btn-light border-300 btn-sm me-1 text-600 shadow-none" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><img src="/layout/crm/assets/img/icons/edit-alt.svg" alt="" width="15" /></button>
                       </div>
                     </div>
                   </div>
                   <hr class="text-200" />
                   <div class="d-flex mb-3 hover-actions-trigger align-items-center">
-                    <div class="file-thumbnail"><img class="img-fluid" src="/layout/backend/assets/img/icons/docs.png" alt="" />
+                    <div class="file-thumbnail"><img class="img-fluid" src="/layout/crm/assets/img/icons/docs.png" alt="" />
                     </div>
                     <div class="ms-3 flex-shrink-1 flex-grow-1">
                       <h6 class="mb-1"><a class="stretched-link text-900 fw-semi-bold" href="#!">functions.php</a></h6>
                       <div class="fs--1"><span class="fw-semi-bold">John</span><span class="fw-medium text-600 ms-2">1 Oct at 4:30 PM</span></div>
-                      <div class="hover-actions end-0 top-50 translate-middle-y"><a class="btn btn-light border-300 btn-sm me-1 text-600" data-bs-toggle="tooltip" data-bs-placement="top" title="Download" href="/layout/backend/assets/img/icons/cloud-download.svg" download="download"><img src="/layout/backend/assets/img/icons/cloud-download.svg" alt="" width="15" /></a>
-                        <button class="btn btn-light border-300 btn-sm me-1 text-600 shadow-none" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><img src="/layout/backend/assets/img/icons/edit-alt.svg" alt="" width="15" /></button>
+                      <div class="hover-actions end-0 top-50 translate-middle-y"><a class="btn btn-light border-300 btn-sm me-1 text-600" data-bs-toggle="tooltip" data-bs-placement="top" title="Download" href="/layout/crm/assets/img/icons/cloud-download.svg" download="download"><img src="/layout/crm/assets/img/icons/cloud-download.svg" alt="" width="15" /></a>
+                        <button class="btn btn-light border-300 btn-sm me-1 text-600 shadow-none" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><img src="/layout/crm/assets/img/icons/edit-alt.svg" alt="" width="15" /></button>
                       </div>
                     </div>
                   </div>
@@ -527,56 +527,56 @@
                 <div class="card-body py-2">
                   <div class="d-flex align-items-center position-relative mb-3">
                     <div class="avatar avatar-2xl status-online">
-                      <img class="rounded-circle" src="/layout/backend/assets/img/team/1.jpg" alt="" />
+                      <img class="rounded-circle" src="/layout/crm/assets/img/team/1.jpg" alt="" />
 
                     </div>
                     <div class="flex-1 ms-3">
-                      <h6 class="mb-0 fw-semi-bold"><a class="stretched-link text-900" href="/layout/backend/pages/user/profile.html">Emma Watson</a></h6>
+                      <h6 class="mb-0 fw-semi-bold"><a class="stretched-link text-900" href="/layout/crm/pages/user/profile.html">Emma Watson</a></h6>
                       <p class="text-500 fs--2 mb-0">Admin</p>
                     </div>
                   </div>
                   <div class="d-flex align-items-center position-relative mb-3">
                     <div class="avatar avatar-2xl status-online">
-                      <img class="rounded-circle" src="/layout/backend/assets/img/team/2.jpg" alt="" />
+                      <img class="rounded-circle" src="/layout/crm/assets/img/team/2.jpg" alt="" />
 
                     </div>
                     <div class="flex-1 ms-3">
-                      <h6 class="mb-0 fw-semi-bold"><a class="stretched-link text-900" href="/layout/backend/pages/user/profile.html">Antony Hopkins</a></h6>
+                      <h6 class="mb-0 fw-semi-bold"><a class="stretched-link text-900" href="/layout/crm/pages/user/profile.html">Antony Hopkins</a></h6>
                       <p class="text-500 fs--2 mb-0">Moderator</p>
                     </div>
                   </div>
                   <div class="d-flex align-items-center position-relative mb-3">
                     <div class="avatar avatar-2xl status-away">
-                      <img class="rounded-circle" src="/layout/backend/assets/img/team/3.jpg" alt="" />
+                      <img class="rounded-circle" src="/layout/crm/assets/img/team/3.jpg" alt="" />
 
                     </div>
                     <div class="flex-1 ms-3">
-                      <h6 class="mb-0 fw-semi-bold"><a class="stretched-link text-900" href="/layout/backend/pages/user/profile.html">Anna Karinina</a></h6>
+                      <h6 class="mb-0 fw-semi-bold"><a class="stretched-link text-900" href="/layout/crm/pages/user/profile.html">Anna Karinina</a></h6>
                       <p class="text-500 fs--2 mb-0">Editor</p>
                     </div>
                   </div>
                   <div class="d-flex align-items-center position-relative mb-3">
                     <div class="avatar avatar-2xl status-offline">
-                      <img class="rounded-circle" src="/layout/backend/assets/img/team/4.jpg" alt="" />
+                      <img class="rounded-circle" src="/layout/crm/assets/img/team/4.jpg" alt="" />
 
                     </div>
                     <div class="flex-1 ms-3">
-                      <h6 class="mb-0 fw-semi-bold"><a class="stretched-link text-900" href="/layout/backend/pages/user/profile.html">John Lee</a></h6>
+                      <h6 class="mb-0 fw-semi-bold"><a class="stretched-link text-900" href="/layout/crm/pages/user/profile.html">John Lee</a></h6>
                       <p class="text-500 fs--2 mb-0">Admin</p>
                     </div>
                   </div>
                   <div class="d-flex align-items-center position-relative false">
                     <div class="avatar avatar-2xl status-offline">
-                      <img class="rounded-circle" src="/layout/backend/assets/img/team/5.jpg" alt="" />
+                      <img class="rounded-circle" src="/layout/crm/assets/img/team/5.jpg" alt="" />
 
                     </div>
                     <div class="flex-1 ms-3">
-                      <h6 class="mb-0 fw-semi-bold"><a class="stretched-link text-900" href="/layout/backend/pages/user/profile.html">Rowen Atkinson</a></h6>
+                      <h6 class="mb-0 fw-semi-bold"><a class="stretched-link text-900" href="/layout/crm/pages/user/profile.html">Rowen Atkinson</a></h6>
                       <p class="text-500 fs--2 mb-0">Editor</p>
                     </div>
                   </div>
                 </div>
-                <div class="card-footer bg-light p-0"><a class="btn btn-sm btn-link d-block w-100 py-2" href="/layout/backend/app/social/followers.html">All active users<span class="fas fa-chevron-right ms-1 fs--2"></span></a></div>
+                <div class="card-footer bg-light p-0"><a class="btn btn-sm btn-link d-block w-100 py-2" href="/layout/crm/app/social/followers.html">All active users<span class="fas fa-chevron-right ms-1 fs--2"></span></a></div>
               </div>
             </div>
             <div class="col-sm-6 col-xxl-3 ps-sm-2 order-xxl-1 mb-3 mb-xxl-0">
