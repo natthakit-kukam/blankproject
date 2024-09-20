@@ -1,42 +1,51 @@
 <?php
 
-use App\Http\Controllers\Backend\PermissionController;
-use App\Http\Controllers\Backend\RoleController;
-use App\Http\Controllers\Backend\UserController;
+use App\Http\Controllers\Backend\HomeController;
+use App\Http\Controllers\PermissionController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\RoleController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
-
-
-
 Route::get('/', function () {
-    return view('page.crm.welcome');
+    return view('welcome');
 });
 
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
-Route::prefix('backend')->group(function () {
-    Route::get('/',  [UserController::class, 'index'])->name('get-user-index');
-    
-    Route::prefix('user')->group(function () {
-        Route::get('/',  [UserController::class, 'index'])->name('get-user-index');
-        Route::get('/create',  [UserController::class, 'create'])->name('get-user-create');
-        Route::post('/',  [UserController::class, 'store'])->name('post-user-store');
-        Route::get('/{id}/edit',  [UserController::class, 'edit'])->name('get-user-edit');
-        Route::get('/{id}/show',  [UserController::class, 'show'])->name('get-user-show');
+    Route::prefix('/admin')->group(function () {
+        Route::get('/index', [HomeController::class, 'index'])->name('admin.index');
+        Route::get('/roles', [RoleController::class, 'index']);
+        Route::get('/role/create', [RoleController::class, 'create']);
+        Route::post('/role', [RoleController::class, 'store']);
+        Route::get('/role/{role}/edit', [RoleController::class, 'edit']);
+        Route::patch('/role/{role}', [RoleController::class, 'update']);
+
+        Route::get('/permissions', [PermissionController::class, 'index']);
+        Route::get('/permission/create', [PermissionController::class, 'create']);
+        Route::post('/permission', [PermissionController::class, 'store']);
+        Route::get('/permission/{permission}/edit', [PermissionController::class, 'edit']);
+        Route::patch('/permission/{permission}', [PermissionController::class, 'update']);
+        Route::post('/delete/{user}', [PermissionController::class, 'delete']);
+        Route::get('/users', [UserController::class, 'lists']);
+        Route::post('/user/{user}', [PermissionController::class, 'update']);
     });
 
-    Route::prefix('role')->group(function () {
-        Route::get('/',  [RoleController::class, 'index'])->name('get-role-index');
-        Route::get('/create',  [RoleController::class, 'create'])->name('get-role-create');
-        Route::post('/',  [RoleController::class, 'store'])->name('post-role-store');
-        Route::get('/{id}/edit',  [RoleController::class, 'edit'])->name('get-role-edit');
-        Route::get('/{id}/show',  [RoleController::class, 'show'])->name('get-role-show');
+    Route::get('/aboutme',  [UserController::class, 'index']);
+    Route::prefix('aboutme')->group(function () {
+        Route::post('/name/{user}', [UserController::class, 'name']);
+        Route::post('/photo/{user}', [UserController::class, 'photo']);
+        Route::post('/updatePassword/{user}', [UserController::class, 'updatePassword']);
+        
     });
-    
-    Route::prefix('permission')->group(function () {
-        Route::get('/',  [PermissionController::class, 'index'])->name('get-permission-index');
-        Route::get('/create',  [PermissionController::class, 'create'])->name('get-permission-create');
-        Route::post('/',  [PermissionController::class, 'store'])->name('post-permission-store');
-        Route::get('/{id}/edit',  [PermissionController::class, 'edit'])->name('get-permission-edit');
-        Route::get('/{id}/show',  [PermissionController::class, 'show'])->name('get-permission-show');
+    Route::prefix('/user')->group(function () {
+        Route::get('/show', [UserController::class, 'show']);
+        Route::post('/register', [UserController::class, 'store']);
     });
+   
 });
+
+require __DIR__ . '/auth.php';

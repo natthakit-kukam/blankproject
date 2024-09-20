@@ -14,9 +14,11 @@ return new class extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('status')->default(1)->comment('1 ใช้งาน 0 ยกเลิก');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('profile_photo_url')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
